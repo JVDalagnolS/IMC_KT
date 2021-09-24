@@ -1,5 +1,6 @@
 package com.example.imckt
 
+import android.content.Context
 import android.os.Parcel
 import android.os.Parcelable
 
@@ -14,60 +15,61 @@ class CalculoImc(var peso:Double, var altura:Double, var sexo:Int) : Parcelable{
     fun calculo(): Double {
         var calcIMC = this.peso /(this.altura * this.altura)
 
-        return calcIMC
+        return Math.round(calcIMC * 100.0) / 100.0
     }
 
-    fun escolhaSexo(): String {
+    fun escolhaSexo(context: Context): String {
+
         if (this.sexo == 1){
-            return "Masculino"
+            return context.getString(R.string.masculino)
         } else if (this.sexo == 2){
-            return "Feminino"
+            return context.getString(R.string.feminino)
         }
-        return "Não escolhido..."
+        return context.getString(R.string.nEsc)
     }
 
-    fun grauImc(): String {
+    fun grauImc(context: Context): String {
         val result = this.calculo()
 
         if (this.sexo == 1){
 
             if(result < 20.7){
-                return "Abaixo do peso"
+                return context.getString(R.string.aPeso)
             }else if( result <= 26.4){
-                return "Peso normal"
+                return context.getString(R.string.nrPeso)
             }else if(result <= 27.8){
-                return "Marginalmente acima do peso"
+                return context.getString(R.string.maPeso)
             }else if(result <= 31.1){
-                return "Acima do peso ideal"
+                return context.getString(R.string.aPeso)
             }else if(result > 31.1){
-                return "Obesidade"
+                return context.getString(R.string.oPeso)
             }
 
         }else if (this.sexo == 2){
 
             if(result < 19.1){
-                return "Abaixo do peso"
+                return context.getString(R.string.aPeso)
             }else if( result <= 25.8){
-                return "Peso normal"
+                return context.getString(R.string.nrPeso)
             }else if(result <= 27.3){
-                return "Marginalmente acima do peso"
+                return context.getString(R.string.maPeso)
             }else if(result <= 32.3){
-                return "Acima do peso ideal"
+                return context.getString(R.string.aPeso)
             }else if(result > 32.3){
-                return "Obesidade"
+                return context.getString(R.string.oPeso)
             }
 
         } else {
-            return "Não selecionado."
+            return context.getString(R.string.nSelec)
         }
 
-        return "Informe corretamente."
+        return context.getString(R.string.inCorretamente)
 
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeDouble(peso)
-        parcel.writeDouble(altura)
+        parcel.writeDouble(Math.round(peso * 100.0) / 100.0)
+        parcel.writeDouble(Math.round(altura * 100.0) / 100.0)
         parcel.writeInt(sexo)
     }
 

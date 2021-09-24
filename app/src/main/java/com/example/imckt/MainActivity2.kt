@@ -17,8 +17,8 @@ class MainActivity2 : AppCompatActivity() {
 
         bind.lblPeso.text = calc?.peso.toString()
         bind.lblAltura.text = calc?.altura.toString()
-        bind.lblGrauPeso.text = calc?.grauImc()
+        bind.lblGrauPeso.text = calc?.grauImc(applicationContext)
         bind.lblResultIMC.text = calc?.calculo().toString()
-        bind.lblSexo.text = calc?.escolhaSexo().toString()
+        bind.lblSexo.text = calc?.escolhaSexo(applicationContext).toString()
     }
 }

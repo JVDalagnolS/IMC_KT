@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">IMC KT</string>
-    <string name="inf_peso">"Enter your weight "</string>
-    <string name="inf_altura">"enter your height "</string>
+    <string name="inf_peso">Enter your weight</string>
+    <string name="inf_altura">Enter your height</string>
     <string name="sexo">"Sex: "</string>
     <string name="masculino">Male</string>
     <string name="feminino">"Feminine "</string>
@@ -11,4 +11,15 @@
     <string name="peso">"Weight: "</string>
     <string name="altura">"Height: "</string>
     <string name="imc">"IMC: "</string>
+    <string name="buttonDescription">Button for your BMI to be calculated</string>
+    <string name="selectMasc">Select if you are male</string>
+    <string name="selectFem">Select if you are female</string>
+    <string name="nEsc">Not chosen...</string>
+    <string name="abPeso">Under weight</string>
+    <string name="nrPeso">" Normal weight"</string>
+    <string name="maPeso">MKarginally overweight</string>
+    <string name="aPeso">Overweight</string>
+    <string name="oPeso">Obesity</string>
+    <string name="nSelec">Not selected</string>
+    <string name="inCorretamente">" Inform correctly"</string>
 </resources>

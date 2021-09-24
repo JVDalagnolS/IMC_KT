@@ -7,11 +7,21 @@
     <string name="feminino">Feminino</string>
     <string name="calcular">Calcular</string>
 
+
     <string name="resltado">Resultado IMC</string>
     <string name="peso">Peso: </string>
     <string name="altura">Altura: </string>
     <string name="imc">IMC: </string>
+    <string name="buttonDescription">Botão para que o seu IMC seja calculado</string>
+    <string name="selectMasc">Selecione se você for do genero masculino</string>
+    <string name="selectFem">Selecione se você for do genero feminino</string>
 
-
-
+    <string name="nEsc">Não escolhido...</string>
+    <string name="abPeso">Abaixo do peso</string>
+    <string name="nrPeso">Peso normal</string>
+    <string name="maPeso">Marginalmente acima do peso</string>
+    <string name="aPeso">Acima do peso</string>
+    <string name="oPeso">Obesidade</string>
+    <string name="nSelec">Não selecionado</string>
+    <string name="inCorretamente">Informe corretamente</string>
 </resources>
