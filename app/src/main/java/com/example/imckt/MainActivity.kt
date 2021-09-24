@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         if (view is RadioButton) {
             // Is the button now checked?
             val checked = view.isChecked
-
             // Check which radio button was clicked
             when (view.getId()) {
                 R.id.radioMasculino ->

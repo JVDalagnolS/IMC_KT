@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">IMC KT</string>
+    <string name="inf_peso">Informe o seu peso</string>
+    <string name="inf_altura">Informe sua altura</string>
+    <string name="sexo">Sexo: </string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="calcular">Calcular</string>
+
+    <string name="resltado">Resultado IMC</string>
+    <string name="peso">Peso: </string>
+    <string name="altura">Altura: </string>
+    <string name="imc">IMC: </string>
+
+
+
 </resources>

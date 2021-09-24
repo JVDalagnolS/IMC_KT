@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IMC KT</string>
+    <string name="inf_peso">"Enter your weight "</string>
+    <string name="inf_altura">"enter your height "</string>
+    <string name="sexo">"Sex: "</string>
+    <string name="masculino">Male</string>
+    <string name="feminino">"Feminine "</string>
+    <string name="calcular">calculate</string>
+    <string name="resltado">"IMC result "</string>
+    <string name="peso">"Weight: "</string>
+    <string name="altura">"Height: "</string>
+    <string name="imc">"IMC: "</string>
+</resources>
