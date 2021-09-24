@@ -73,15 +73,17 @@
             android:id="@+id/radioMasculino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="?android:attr/textColorSecondary"
+            android:onClick="onRadioButtonClicked"
             android:text="Masculino"
             android:textColor="?android:attr/textColorSecondary"
-            android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"/>
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radioFeminino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="?android:attr/textColorSecondary"
             android:text="Feminino"
             android:textColor="?android:attr/textColorSecondary"
             android:textSize="16sp" />
