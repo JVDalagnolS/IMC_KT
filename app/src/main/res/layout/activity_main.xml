@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="?android:attr/textColorSecondary"
             android:contentDescription="Selecione se você é do genero feminino"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/feminino"
             android:textColor="?android:attr/textColorSecondary"
             android:textSize="16sp" />
